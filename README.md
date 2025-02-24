@@ -7,6 +7,7 @@ Module to perform all arithmetic operations.
 - Ouputs: Output
 
 ## 2/23
+- Workflow: text editor -> iverilog -> gtkwave
 - When cloning, use ssh to avoid commit issues later
 - Blocking vs non-blocking
 - Use case of all types of instructions
