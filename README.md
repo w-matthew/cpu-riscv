@@ -10,6 +10,6 @@ Module to perform all arithmetic operations.
 - Workflow: text editor -> iverilog -> gtkwave
 - When cloning, use ssh to avoid commit issues later
 - Blocking vs non-blocking
-    -Blocking: Used for sequential processing; denoted by '='
-    -Non-Blocking: Used for non-sequential (parallel) processing; denoted by '<='
+    - Blocking: Used for sequential processing; denoted by '='
+    - Non-Blocking: Used for non-sequential (parallel) processing; denoted by '<='
 - Use case of all types of instructions
