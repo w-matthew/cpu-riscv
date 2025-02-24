@@ -1,13 +1,16 @@
 `include "alu_op.vh"
 
 module alu (
+    // 32-bit system, reflected in inputs
     input [31:0] a,
     input [31:0] b,
-    input [ 3:0] sel,
+    input [3:0] sel,
 
+    // Must specify the variable type (input, output, inout)
     output [31:0] out
 );
 
+    // always @(*) is used for conditional circuits, where the output is updated as soon as there is a change in input. always @(posedge clk) is used for sequential circuits, where the output is only updated at the postive edge of the clock cycle
     always @(*) begin
         case (sel)
             // add
