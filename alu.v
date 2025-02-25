@@ -36,8 +36,7 @@ module alu (
             // default case to prevent latches
             default: out = 32'd0;
 
-        endcase
-        ;
+        endcase;
     end
 
 endmodule
