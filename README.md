@@ -13,3 +13,5 @@ Module to perform all arithmetic operations.
     - Blocking: Used for sequential processing; denoted by '='
     - Non-Blocking: Used for non-sequential (parallel) processing; denoted by '<='
 - Use case of all types of instructions
+## 2/25
+- use -g2012 flag for system verilog support
