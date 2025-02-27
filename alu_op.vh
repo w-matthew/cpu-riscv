@@ -1,8 +1,8 @@
 /*
     ifndef checks whether alu_op has been defined, and if not, we proceed to define alu_op
 */
-`ifndef ALU_OP
-`define ALU_OP
+`ifndef alu_op
+`define alu_op
 
 // Can also represent ADD as 4'b0000, useful to have a verilog header file for readability.
 `define ADD 4'd0
