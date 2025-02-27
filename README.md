@@ -15,3 +15,6 @@ Module to perform all arithmetic operations.
 - Use case of all types of instructions
 ## 2/25
 - use -g2012 flag for system verilog support
+## 2/26
+- $signed() to show pos/neg numbers in console output
+- combinational logic: output is only dependent on inputs, works async/no clock
