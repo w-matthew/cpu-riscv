@@ -1,12 +1,14 @@
 # 5-Stage RISC-V Softcore Processor
-## Datapath
-![image](https://github.com/user-attachments/assets/b5a85df9-06a7-44b7-8997-de6fa9eff5ad)
 ## Workflow
 - Install Icarus Verilog and GTKWave
 - To complile SystemVerilog
 ```verilog
 iverilog -g2012 -o [output file] [design file] [testbench file] [header file]
 ```
+## Datapath
+![riscv-datapath](https://github.com/user-attachments/assets/b5a85df9-06a7-44b7-8997-de6fa9eff5ad)
+## RV32I Instruction Types
+![riscv-instructions](https://github.com/user-attachments/assets/aed43d6b-19bf-4b4e-9862-b42efd4b2c5e)
 ## ALU
 Module to perform all arithmetic operations. 
 - Inputs: [31:0] a, [31:0] b, [3:0] sel
@@ -15,6 +17,7 @@ Module to perform all arithmetic operations.
 Module to extract and format all immediates for I,S,B,U, and J type instructions
 - Inputs: [25:0] inst, [2:0] imm_sel
 - Ouputs: [31:0] out
+![riscv-instructions](https://github.com/user-attachments/assets/902c50d3-0faf-4587-a08a-0650e8965edd)
 ## 2/23
 - Workflow: text editor -> iverilog -> gtkwave
 - When cloning, use ssh to avoid commit issues later
