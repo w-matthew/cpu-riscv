@@ -5,6 +5,14 @@
 ```verilog
 iverilog -g2012 -o [output file] [design file] [testbench file] [header file]
 ```
+- To simulate SystemVerilog
+```verilog
+vvp [output file]
+```
+- To view waveforms
+```verilog
+gtkwave [vcd file]
+```
 ## Datapath
 ![riscv-datapath](https://github.com/user-attachments/assets/b5a85df9-06a7-44b7-8997-de6fa9eff5ad)
 ## RV32I Instruction Types
