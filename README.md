@@ -1,4 +1,4 @@
-# 5-stage RISC-V softcore processor
+# 5-Stage RISC-V Softcore Processor
 ## Datapath
 ![image](https://github.com/user-attachments/assets/b5a85df9-06a7-44b7-8997-de6fa9eff5ad)
 ## Workflow
