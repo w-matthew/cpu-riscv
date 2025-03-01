@@ -25,7 +25,8 @@ Module to perform all arithmetic operations.
 Module to extract and format all immediates for I,S,B,U, and J type instructions
 - Inputs: [25:0] inst, [2:0] imm_sel
 - Ouputs: [31:0] out
-![riscv-instructions](https://github.com/user-attachments/assets/902c50d3-0faf-4587-a08a-0650e8965edd)
+
+![riscv-immediate](https://github.com/user-attachments/assets/0b8ba84b-2b19-4ab7-9a12-8d53ac34be0c)
 ## 2/23
 - Workflow: text editor -> iverilog -> gtkwave
 - When cloning, use ssh to avoid commit issues later
