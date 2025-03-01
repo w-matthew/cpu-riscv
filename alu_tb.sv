@@ -1,4 +1,4 @@
-`include "alu_op.vh"
+`include "alu_sel.vh"
 
 module alu_tb;
     // these change, hence the need for reg

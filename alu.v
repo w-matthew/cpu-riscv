@@ -1,4 +1,4 @@
-`include "alu_op.vh"
+`include "alu_sel.vh"
 
 module alu (
     // 32-bit system, reflected in inputs
