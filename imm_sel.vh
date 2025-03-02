@@ -4,12 +4,11 @@
 `ifndef IMM_SEL
 `define IMM_SEL
 
-// Define instruction type, using 3 bits to represent a total of 6 instruction types (000 - R, 001 - I, etc.)
-`define R_TYPE 3'd0
-`define I_TYPE 3'd1
-`define S_TYPE 3'd2
-`define B_TYPE 3'd3
-`define U_TYPE 3'd4
-`define J_TYPE 3'd5
+// Define instruction type, using 3 bits to represent a total of 6 instruction types (000 - I, etc.)
+`define I_TYPE 3'd0
+`define S_TYPE 3'd1
+`define B_TYPE 3'd2
+`define U_TYPE 3'd3
+`define J_TYPE 3'd4
 
 `endif

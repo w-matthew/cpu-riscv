@@ -1,0 +1,40 @@
+$date
+	Sun Mar  2 01:13:44 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module imm_gen_tb $end
+$var wire 32 ! out [31:0] $end
+$var reg 3 " imm_sel [2:0] $end
+$var reg 25 # inst [24:0] $end
+$var integer 32 $ i_fail [31:0] $end
+$var integer 32 % i_pass [31:0] $end
+$var integer 32 & inst_32 [31:0] $end
+$scope module DUT $end
+$var wire 3 ' imm_sel [2:0] $end
+$var wire 25 ( inst [24:0] $end
+$var reg 32 ) out [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1100 )
+b11000100100001000 (
+b0 '
+b110001001000010000010011 &
+b0 %
+b0 $
+b11000100100001000 #
+b0 "
+b1100 !
+$end
+#10
+b1 %
