@@ -45,8 +45,6 @@ module imm_gen_tb;
         #100;
         if (out == -32'd4) begin
             $display("PASS: Basic I_TYPE");
-                        $display("  Expected: %0d, Got: %0d", $signed(-32'd4), $signed(out));
-
             i_pass++;
         end else begin
             $display("FAIL: Basic I_TYPE");
