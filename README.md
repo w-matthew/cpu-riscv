@@ -27,15 +27,10 @@ Module to extract and format all immediates for I,S,B,U, and J type instructions
 - Ouputs: [31:0] out
 
 ![riscv-immediate](https://github.com/user-attachments/assets/0b8ba84b-2b19-4ab7-9a12-8d53ac34be0c)
-## 2/23
-- Workflow: text editor -> iverilog -> gtkwave
+## Working Notes
 - When cloning, use ssh to avoid commit issues later
 - Blocking vs non-blocking
     - Blocking: Used for sequential processing; denoted by '='
     - Non-Blocking: Used for non-sequential (parallel) processing; denoted by '<='
-- Use case of all types of instructions
-## 2/25
-- use -g2012 flag for system verilog support
-## 2/26
 - $signed() to show pos/neg numbers in console output
-- combinational logic: output is only dependent on inputs, works async/no clock
+- Combinational logic: output is only dependent on inputs, works async/no clock
