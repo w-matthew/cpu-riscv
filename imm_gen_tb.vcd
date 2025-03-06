@@ -1,5 +1,5 @@
 $date
-	Mon Mar  3 23:28:05 2025
+	Wed Mar  5 22:28:57 2025
 $end
 $version
 	Icarus Verilog
@@ -15,10 +15,14 @@ $var integer 32 $ i_fail [31:0] $end
 $var integer 32 % i_pass [31:0] $end
 $var integer 32 & inst_addi_neg [31:0] $end
 $var integer 32 ' inst_addi_pos [31:0] $end
+$var integer 32 ( inst_sh_neg [31:0] $end
+$var integer 32 ) inst_sh_pos [31:0] $end
+$var integer 32 * s_fail [31:0] $end
+$var integer 32 + s_pass [31:0] $end
 $scope module DUT $end
-$var wire 3 ( imm_sel [2:0] $end
-$var wire 25 ) inst [24:0] $end
-$var reg 32 * out [31:0] $end
+$var wire 3 , imm_sel [2:0] $end
+$var wire 25 - inst [24:0] $end
+$var reg 32 . out [31:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -27,9 +31,13 @@ $dumpall
 $end
 #0
 $dumpvars
-b1100 *
-b11000100100001000 )
-b0 (
+b1100 .
+b11000100100001000 -
+b0 ,
+b0 +
+b0 *
+b100101000001100000100011 )
+b11111110100101000001111000100011 (
 b110001001000010000010011 '
 b11111111110001001000010000010011 &
 b0 %
@@ -40,9 +48,23 @@ b1100 !
 $end
 #10
 b11111111111111111111111111111100 !
-b11111111111111111111111111111100 *
+b11111111111111111111111111111100 .
 b1111111111000100100001000 #
-b1111111111000100100001000 )
+b1111111111000100100001000 -
 b1 %
-#110
+#20
+b10000 !
+b10000 .
+b1 "
+b1 ,
+b10010100000110000 #
+b10010100000110000 -
 b10 %
+#30
+b11111111111111111111111111111100 !
+b11111111111111111111111111111100 .
+b1111111010010100000111100 #
+b1111111010010100000111100 -
+b1 +
+#40
+b10 +
