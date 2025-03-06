@@ -13,7 +13,7 @@ module imm_gen (
             `I_TYPE: out = {{21{inst[24]}}, inst[23:18], inst[17:14], inst[13]};
             `S_TYPE: out = {{21{inst[24]}}, inst[23:18], inst[4:1], inst[0]};
             `B_TYPE: out = {{20{inst[24]}}, inst[0], inst[23:18], inst[4:1], 1'b0};
-            `U_TYPE: out = {inst[24], inst[23:13], inst[12:5], 12'b0};
+            `U_TYPE: out = {inst[24:5], 12'b0};
             `J_TYPE: out = {{12{inst[24]}}, inst[12:5], inst[13], inst[23:18], inst[17:14], 1'b0};
             default: out = 32'b0; // Add default case for completeness
         endcase

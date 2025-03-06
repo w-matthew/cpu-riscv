@@ -1,5 +1,5 @@
 $date
-	Wed Mar  5 22:28:57 2025
+	Thu Mar  6 00:21:08 2025
 $end
 $version
 	Icarus Verilog
@@ -11,18 +11,31 @@ $scope module imm_gen_tb $end
 $var wire 32 ! out [31:0] $end
 $var reg 3 " imm_sel [2:0] $end
 $var reg 25 # inst [24:0] $end
-$var integer 32 $ i_fail [31:0] $end
-$var integer 32 % i_pass [31:0] $end
-$var integer 32 & inst_addi_neg [31:0] $end
-$var integer 32 ' inst_addi_pos [31:0] $end
-$var integer 32 ( inst_sh_neg [31:0] $end
-$var integer 32 ) inst_sh_pos [31:0] $end
-$var integer 32 * s_fail [31:0] $end
-$var integer 32 + s_pass [31:0] $end
+$var integer 32 $ b_fail [31:0] $end
+$var integer 32 % b_pass [31:0] $end
+$var integer 32 & i_fail [31:0] $end
+$var integer 32 ' i_pass [31:0] $end
+$var integer 32 ( inst_addi_neg [31:0] $end
+$var integer 32 ) inst_addi_pos [31:0] $end
+$var integer 32 * inst_beq_neg [31:0] $end
+$var integer 32 + inst_beq_pos [31:0] $end
+$var integer 32 , inst_jal_neg [31:0] $end
+$var integer 32 - inst_jal_pos [31:0] $end
+$var integer 32 . inst_lui [31:0] $end
+$var integer 32 / inst_sh_neg [31:0] $end
+$var integer 32 0 inst_sh_pos [31:0] $end
+$var integer 32 1 j_fail [31:0] $end
+$var integer 32 2 j_pass [31:0] $end
+$var integer 32 3 s_fail [31:0] $end
+$var integer 32 4 s_pass [31:0] $end
+$var integer 32 5 total_fail [31:0] $end
+$var integer 32 6 total_pass [31:0] $end
+$var integer 32 7 u_fail [31:0] $end
+$var integer 32 8 u_pass [31:0] $end
 $scope module DUT $end
-$var wire 3 , imm_sel [2:0] $end
-$var wire 25 - inst [24:0] $end
-$var reg 32 . out [31:0] $end
+$var wire 3 9 imm_sel [2:0] $end
+$var wire 25 : inst [24:0] $end
+$var reg 32 ; out [31:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -31,15 +44,28 @@ $dumpall
 $end
 #0
 $dumpvars
-b1100 .
-b11000100100001000 -
-b0 ,
-b0 +
-b0 *
-b100101000001100000100011 )
-b11111110100101000001111000100011 (
-b110001001000010000010011 '
-b11111111110001001000010000010011 &
+b1100 ;
+b11000100100001000 :
+b0 9
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+b100101000001100000100011 0
+b11111110100101000001111000100011 /
+b1010100001100100001010000110111 .
+b1111111111111111111000011101111 -
+b10000000000000000000000011101111 ,
+b101001001000111001100011 +
+b11111110101001001000100001100011 *
+b110001001000010000010011 )
+b11111111110001001000010000010011 (
+b0 '
+b0 &
 b0 %
 b0 $
 b11000100100001000 #
@@ -48,23 +74,60 @@ b1100 !
 $end
 #10
 b11111111111111111111111111111100 !
-b11111111111111111111111111111100 .
+b11111111111111111111111111111100 ;
 b1111111111000100100001000 #
-b1111111111000100100001000 -
-b1 %
+b1111111111000100100001000 :
+b1 '
 #20
 b10000 !
-b10000 .
+b10000 ;
 b1 "
-b1 ,
+b1 9
 b10010100000110000 #
-b10010100000110000 -
-b10 %
+b10010100000110000 :
+b10 '
 #30
 b11111111111111111111111111111100 !
-b11111111111111111111111111111100 .
+b11111111111111111111111111111100 ;
 b1111111010010100000111100 #
-b1111111010010100000111100 -
-b1 +
+b1111111010010100000111100 :
+b1 4
 #40
-b10 +
+b11100 !
+b11100 ;
+b10 "
+b10 9
+b10100100100011100 #
+b10100100100011100 :
+b10 4
+#50
+b11111111111111111111011111110000 !
+b11111111111111111111011111110000 ;
+b1111111010100100100010000 #
+b1111111010100100100010000 :
+b1 %
+#60
+b1010100001100100001000000000000 !
+b1010100001100100001000000000000 ;
+b11 "
+b11 9
+b101010000110010000101000 #
+b101010000110010000101000 :
+b10 %
+#70
+b11111111111111111110 !
+b11111111111111111110 ;
+b100 "
+b100 9
+b111111111111111111100001 #
+b111111111111111111100001 :
+b11 '
+#80
+b11111111111100000000000000000000 !
+b11111111111100000000000000000000 ;
+b1000000000000000000000001 #
+b1000000000000000000000001 :
+b1 2
+#90
+b1001 6
+b10 2
