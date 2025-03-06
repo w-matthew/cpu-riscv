@@ -26,6 +26,8 @@ Module to extract and format all immediates for I,S,B,U, and J type instructions
 - Inputs: [25:0] inst, [2:0] imm_sel
 - Ouputs: [31:0] out
 
+[RISC-V Instruction Encoder/Decoder](https://luplab.gitlab.io/rvcodecjs/)
+
 ![riscv-immediate](https://github.com/user-attachments/assets/0b8ba84b-2b19-4ab7-9a12-8d53ac34be0c)
 ## Working Notes
 - When cloning, use ssh to avoid commit issues later
