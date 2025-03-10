@@ -3,7 +3,7 @@
 - Install Icarus Verilog and GTKWave
 - To complile SystemVerilog
 ```verilog
-iverilog -g2012 -o [output file] [design file] [testbench file] [header file]
+iverilog -g2012 -I [rtl included files]-o [output file] [design file] [testbench file] [header file]
 ```
 - To simulate SystemVerilog
 ```verilog
